@@ -16,6 +16,8 @@ class Car(
         var Owner:String? = null
         var Price:Double? = null
         var MilesDrive:Int? = null
+        var Model:Int? =null
+        var Type:String? = null
 
              init {                             // init is a function that will execute directly when anyone wants to initialize the class
                  println("Type:$Type")
@@ -26,6 +28,8 @@ class Car(
                  this.Owner= Owner
                  this.Price = Price
                  this.MilesDrive= MilesDrive
+                 this.Model= Model
+                 this.Type = Type
              }
 
     fun GetPrice():Double? {
@@ -36,7 +40,7 @@ class Car(
 
     fun GetOwmer():String? {
 
-        return this.Owner ;
+        return this.Owner
     }
 
     }
